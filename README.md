@@ -1,12 +1,18 @@
-## Code for revealing_entanglement_through_local_features_of_phase-space_distributions
+# Code for revealing_entanglement_through_local_features_of_phase-space_distributions
 This is the repository for all the code used in the article _[Revealing entanglement through local features of phase-space distributions](https://arxiv.org/abs/2602.21688)_.
 
-All the code is written in Python, except for one file that uses Mathematica.
+All the code is written in Python version 2.7.14, except for one file that uses Mathematica.
 
 The code is organised as follows:
-* data: generates all the data used for the plots:
-* * definition of the operators for which the expectation value with respect to which gives the matrix elements of the minor $M_2(\alpha,\beta;\sigma)$;
-  * values of the minor for NOON states for various $N$ in regions of phase space;
-  * values of the minor for NOON states as a function of $\sigma$, calculated at the optimal phase-space coordinate for Husimi-based criterion (the optimal coordinate is evaluated using Mathematica);
-  * values of the Husimi-based minor for noisy NOON states (noise in the form of photon loss)
-  * 
+
+### NOON states
+* noon_optimal.nb - a Mathematica notebook to locate the coordinates for minima of the Husimi-based criterion for various N
+* noon_data.py - generates the data used for plotting the Husimi-based criterion for various N, as well as the performance of the criterion for a range of $\sigma$ and loss parameter $\tau$
+* noon_plots.py - generates plots using the previously generated data
+
+### Entangled cat states
+* entangled_cat_states.py - generates the data (which is also saved in .csv files) and the plots for the two-mode entangled cat states
+
+### Random number states
+* random_states_data-py - randomly samples the value of the $\sigma$-parametrized criterion for various Hilbert space dimensions at two different phase-space coordinates
+* random_states_plots.py - generates plots using the previously generated data
