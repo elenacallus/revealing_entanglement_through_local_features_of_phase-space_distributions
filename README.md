@@ -1,4 +1,4 @@
-# Code for revealing_entanglement_through_local_features_of_phase-space_distributions
+# Code for *Revealing entanglement through local features of phase-space distributions*
 This is the repository for all the code used in the article _[Revealing entanglement through local features of phase-space distributions](https://arxiv.org/abs/2602.21688)_ by Elena Callus, Martin Gärttner & Tobias Haas, arXiv:2602.21688 (2026).
 
 All the code is written in Python version 2.7.14, except for one file that uses Mathematica.
